@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: micro2
-        image: micros1lite.azurecr.io/micro2:3.0 
+        image: micros1lite.azurecr.io/micro1:3.0 
         env:
         - name: CODIGO
           valueFrom: 
