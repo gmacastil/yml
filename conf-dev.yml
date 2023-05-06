@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: micro1
+  namespace: dev
+data:
+  CODIGO: "sabado:ambiente-dev"
