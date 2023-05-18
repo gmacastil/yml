@@ -1,28 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: micro2
+  name: micro3
   namespace: dev
   labels:
-    app: micro2
+    app: micro3
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: micro2
+      app: micro3
   template:
     metadata:
       labels:
-        app: micro2
+        app: micro3
     spec:
       containers:
-      - name: micro2
-        image: micros1lite.azurecr.io/micro1:3.0 
+      - name: micro3
+        image: micros1lite.azurecr.io/calculadora-micro:1.1
         env:
         - name: CODIGO
           valueFrom: 
            configMapKeyRef:
-             name: micro2
+             name: micro3
              key: CODIGO
         ports:
         - containerPort: 8080
