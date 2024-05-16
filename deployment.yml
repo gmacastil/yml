@@ -20,7 +20,7 @@ spec:
         image: mauron/demo:17
         envFrom:
           - configMapRef:
-            name: micro3
+              name: micro3
         ports:
         - containerPort: 8080
 
