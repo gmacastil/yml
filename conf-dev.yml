@@ -5,3 +5,4 @@ metadata:
   namespace: dev
 data:
   CODIGO: "fin de clase"
+  URL: "https://hola"
