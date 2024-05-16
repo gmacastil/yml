@@ -18,12 +18,9 @@ spec:
       containers:
       - name: micro3
         image: mauron/demo:17
-        env:
-        - name: CODIGO
-          valueFrom: 
-           configMapKeyRef:
-             name: micro3
-             key: CODIGO
+        envFrom:
+          - configMapRef:
+            name: micro3
         ports:
         - containerPort: 8080
 
