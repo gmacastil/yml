@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: micro3
-        image: micros1lite.azurecr.io/calculadora-micro:1.2
+        image: mauron/demo:17
         env:
         - name: CODIGO
           valueFrom: 
